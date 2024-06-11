@@ -5,4 +5,7 @@ import com.mt.model.entity.Cliente;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ClienteDao extends CrudRepository<Cliente,Integer> {
+
+    boolean existsById( Integer id);
+
 }
